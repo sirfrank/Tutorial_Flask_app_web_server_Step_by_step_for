@@ -237,9 +237,9 @@ WantedBy=multi-user.target
 ```
 press Ctrl+X ; press y 	# save the file
 
-sudo systemctl start Flask_app		# start service
+``` sudo systemctl start Flask_app```		# start service
 
-sudo systemctl enable Flask_app		# enable service to start with system boot
+```sudo systemctl enable Flask_app```		# enable service to start with system boot
 
 # STEP 8 (configure nginx to serve )
 
