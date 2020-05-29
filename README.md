@@ -103,9 +103,12 @@ enable nginx ``` sudo systemctl enable nginx ```
 
 
  turn off selinux ``` sudo nano /etc/sysconfig/selinux ```
+ 
+ Change the directive SELinux=enforcing to SELinux=disabled
+
  press Ctrl+X ; press y 	# save the file
 
- Change the directive SELinux=enforcing to SELinux=disabled
+ 
 
  
 
