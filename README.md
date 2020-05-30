@@ -2,7 +2,7 @@
 
 ``` cd <your_app_directory>```
 
-`` source <yourenv>/bin/activate```	# if you are using envoirment, as you SHOULD !
+``` source <yourenv>/bin/activate```	# if you are using envoirment, as you SHOULD !
 
 ``` export FLASK_APP=run.py ```
 
