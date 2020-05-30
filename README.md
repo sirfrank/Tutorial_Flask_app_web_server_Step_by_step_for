@@ -1,3 +1,13 @@
+# Guide to run your app on localhost
+
+``` cd <your_app_directory>```
+`` source <yourenv>/bin/activate```	# if you are using envoirment, as you SHOULD !
+``` export FLASK_APP=run.py ```
+``` export FLASK_DEBUG=1 ```
+``` flask run --host=0.0.0.0 ``` # this will run your app localhost:5000
+
+
+
 # Step by step guide to host Flask application on webserver
 
 ####################################################################################################
