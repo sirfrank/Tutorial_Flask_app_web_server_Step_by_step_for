@@ -378,8 +378,8 @@ more debugging trick : [a link](https://github.com/sirfrank/Flask_app)
 
 insert this :
 
-```from flask import Flask
-
+```
+from flask import Flask
 
 app = Flask(__name__)
 
