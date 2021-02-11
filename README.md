@@ -332,3 +332,21 @@ after reboot your server should serve the Flask_app
 
 visit yourIP in webbrowser
 
+### OR 
+
+# Debugging :)
+
+ERROR : ``` This site can’t be reachedhttp://<yourIP>/ is unreachable.```
+
+- check if nginx is running :
+```service nginx status```
+if not, service nginx restart
+
+- check if Flask_app service is running
+```service Flask_app status```
+
+If failed with code :
+```Process: 715 ExecStart=/home/Flask_user/Flask_app/env_Flask/bin/gunicorn --workers 3 --bind unix:Flask_app.sock -m 007 wsgi (code=exited, status=217/USER)```
+
+
+
