@@ -369,10 +369,15 @@ more debugging trick : [a link](https://github.com/sirfrank/Flask_app)
 
 ## create python package for your modul
 ``` cd /home/Flask_user/Flask_app ```
+
 ``` mkdir my_flask_app_package ``` 
+
 ``` cd my_flask_app_package ```
+
 ``` nano __init__.py``` 
+
 insert this :
+
 ```from flask import Flask
 
 
@@ -385,10 +390,12 @@ if __name__ == "__main__":
     app.run(host='0.0.0.0')
   
 ```
+
 save.
 
 ## creates routes.py
 ``` nano routes.py```
+
 insert this 
 ```
 #from flask import redirect, url_for # here comes more import as you need fro flask
@@ -401,9 +408,13 @@ def root_():
 
 ```
 
+save
+
 ## modify wsgi
+
 ``` cd .. ; nano wsgi.py```
-MODIFI content to this :
+
+MODIFY content to this :
 ```
 from my_flask_app_package import app as application
 
@@ -411,11 +422,15 @@ if __name__ == "__main__":
     application.run()
 
 ```
+
 save
 ## delete run.py
 ``` rm run.py ```
+
 ## restastr server 
+
 visit IP ;)
+
 # and be happy :)
 
 
