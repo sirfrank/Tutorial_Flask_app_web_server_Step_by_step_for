@@ -163,7 +163,7 @@ web browser : check your IP address, should shows a default nginx page
 
 ```cd ~/Flask_app```
 
-```chmod 710 ~/Flask_user```
+```chmod 710 ~/Flask_user``` # propably mistake ,rightly : ```chmod 710 ~/Flask_app``` # todo
 
 
 ### virtualenv
