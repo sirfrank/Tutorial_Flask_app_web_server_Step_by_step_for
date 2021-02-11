@@ -362,5 +362,7 @@ If failed with code :
 ```/home/Flask_user/Flask_app/env_Flask/bin/gunicorn --workers 3 --bind=0.0.0.0:8000 wsgi```
 
 
+more debugging trick : [a link](https://github.com/sirfrank/Flask_app)
+
 
 
