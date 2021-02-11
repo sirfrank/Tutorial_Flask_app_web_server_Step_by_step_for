@@ -175,6 +175,8 @@ install virtualenv ``` sudo pip3 install virtualenv ```
 
 better : ```pip3 install --user Flask_user virtualenv```
 
+if "egg_info" error, su root, and do as root. 
+
 
 create virtual env for this project ```python3 -m virtualenv env_Flask```
 
