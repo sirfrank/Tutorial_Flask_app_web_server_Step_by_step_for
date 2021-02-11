@@ -171,6 +171,9 @@ web browser : check your IP address, should shows a default nginx page
 
 install virtualenv ``` sudo pip3 install virtualenv ```
 
+better : ```pip3 install --user Flask_app virtualenv```
+
+
 create virtual env for this project ```python3 -m virtualenv env_Flask```
 
 activate virtual env ```source env_Flask/bin/activate```
