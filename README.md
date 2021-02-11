@@ -71,22 +71,22 @@ connect to the server:
 ``` ssh root@<yourIP> ```
 	than type root password
 
-### create Flask_app user
+### create Flask_user user
 - add user
-``` adduser Flask_app ```
+``` adduser Flask_user ```
 - add passwd
-``` passwd Flask_app ```
+``` passwd Flask_user ```
 
 - add to wheel group, which is sudoer
-```usermod -aG wheel Flask_app```
+```usermod -aG wheel Flask_user```
 
-- quit server and login back as Flask_app user
+- quit server and login back as Flask_user user
 
 quit root user ``` exit ```
 
 # STEP 3 (install packages for Centos8)
 
-log back to server with Flask_app user in terminal/PUTTY ``` ssh Flask_app@<yourIP> ```
+log back to server with Flask_user user in terminal/PUTTY ``` ssh Flask_user@<yourIP> ```
 
 update centos8 to latest ``` sudo yum clean all && yum clean metadata && yum -y update yum \ && yum update --skip-broken -y; ```
 this might take a while depending on how updated your initial Centos
@@ -143,7 +143,7 @@ enable nginx ``` sudo systemctl enable nginx ```
 
 reboot your server ``` sudo reboot ``` it will take few mins
 
-log back to server with Flask_app user in terminal/PUTTY ``` ssh Flask_app@<yourIP> ```
+log back to server with Flask_user user in terminal/PUTTY ``` ssh Flask_user@<yourIP> ```
 
 ### security (firewall + selinux)
 ``` sudo firewall-cmd --list-ports --zone=public ``` # should see ports 5000 and 8000 open
@@ -163,7 +163,7 @@ web browser : check your IP address, should shows a default nginx page
 
 ```cd ~/Flask_app```
 
-```chmod 710 ~/Flask_user``` # propably mistake ,rightly : ```chmod 710 ~/Flask_app``` # todo
+```chmod 710 ~/Flask_user``` # do not touch, good like this !
 
 
 ### virtualenv
@@ -171,7 +171,7 @@ web browser : check your IP address, should shows a default nginx page
 
 install virtualenv ``` sudo pip3 install virtualenv ```
 
-better : ```pip3 install --user Flask_app virtualenv```
+better : ```pip3 install --user Flask_user virtualenv```
 
 
 create virtual env for this project ```python3 -m virtualenv env_Flask```
@@ -295,7 +295,7 @@ server {
 ```
 press Ctrl+X ; press y 	# save the file
 
-add nginx user to Flask_app group
+add nginx user to Flask_user group
 ``` sudo usermod -a -G Flask_user nginx ```
 
 
