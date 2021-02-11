@@ -95,10 +95,15 @@ this might take a while depending on how updated your initial Centos
 
 install nano for text editing (yeah, i know... vim.. but if u are reading this tutorial, you might be more confortable with nano)
 ``` yum install epel-release -y; yum install nano -y ```
+
 potential error :
+
 “Failed to set locale, defaulting to C.UTF-8” 
+
 Fix: ```  localectl set-locale LANG=en_US.UTF-8 ``` 
+
 if still exist :
+
 ```dnf install langpacks-en glibc-all-langpacks -y```
 
 
