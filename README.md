@@ -123,6 +123,8 @@ enable nginx ``` sudo systemctl enable nginx ```
  open port 5000 for testing ```sudo firewall-cmd --zone=public --add-port=5000/tcp --permanent ```
 
  open port 8000 for testing ```sudo firewall-cmd --zone=public --add-port=8000/tcp --permanent ```
+ 
+ add http : ```sudo firewall-cmd --permanent --add-service=http```
 
  reload firewall to make effect the above ``` sudo firewall-cmd --reload ```
 
