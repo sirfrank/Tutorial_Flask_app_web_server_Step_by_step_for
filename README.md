@@ -334,7 +334,7 @@ visit yourIP in webbrowser
 
 ### OR 
 
-# Debugging :)
+# Debugging :)(listed cases i f*cked up)
 
 ERROR : ``` This site can’t be reachedhttp://<yourIP>/ is unreachable.```
 
@@ -345,8 +345,18 @@ if not, service nginx restart
 - check if Flask_app service is running
 ```service Flask_app status```
 
-If failed with code :
+If failed with Flask_app service code :
 ```Process: 715 ExecStart=/home/Flask_user/Flask_app/env_Flask/bin/gunicorn --workers 3 --bind unix:Flask_app.sock -m 007 wsgi (code=exited, status=217/USER)```
+
+Something fucked upwith user craetion .... me idiot :D
+
+If failed with code :
+```any new error code```
+- check if gunicorn is in env_folder: 
+```/home/Flask_user/Flask_app/env_Flask/bin/```in this folder must be gunicorn. (otherwise pip3 install failed.)
+- check if gunicorn is running on its own
+```/home/Flask_user/Flask_app/env_Flask/bin/gunicorn --workers 3 --bind=0.0.0.0:8000 wsgi```
+
 
 
 
