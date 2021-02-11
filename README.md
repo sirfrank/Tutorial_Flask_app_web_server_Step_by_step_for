@@ -165,7 +165,7 @@ web browser : check your IP address, should shows a default nginx page
 
 ```cd ~/Flask_app```
 
-```chmod 710 ~/Flask_user``` # do not touch, good like this !
+```chmod 770 ~/Flask_user``` # do not touch, good like this ! # add all permit to owner and group (nginx will be in the group see line 300(iss))
 
 
 ### virtualenv
