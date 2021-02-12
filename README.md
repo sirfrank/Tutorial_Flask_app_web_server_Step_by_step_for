@@ -313,7 +313,7 @@ enable nginx as a service
 
 ```  sudo systemctl enable nginx ``` 
 
-# STEP 9 
+# STEP 9 (Now big test)
 
 ### reboot server 
 close not needed ports 
@@ -365,7 +365,7 @@ If failed with code :
 more debugging trick : [a link](https://github.com/sirfrank/Flask_app)
 
 
-# Step 10
+# Step 10 (setting up wsgi.py -> my_flask_app_package.__init__.py -> routes.py )
 
 ## create python package for your modul
 ``` cd /home/Flask_user/Flask_app ```
