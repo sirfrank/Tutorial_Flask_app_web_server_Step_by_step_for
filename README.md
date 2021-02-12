@@ -349,11 +349,15 @@ if not, service nginx restart
 - check if Flask_app service is running
 ```service Flask_app status```
 
-If failed with Flask_app service code :
+## If failed with Flask_app service code :
 ```Process: 715 ExecStart=/home/Flask_user/Flask_app/env_Flask/bin/gunicorn --workers 3 --bind unix:Flask_app.sock -m 007 wsgi (code=exited, status=217/USER)```
 
 Something fucked upwith user craetion .... me idiot :D
 
+## If failed with Flask_app service code :
+```Process: 727 ExecStart=/home/Flask_user/Flask_app/env_Flask/bin/gunicorn --workers 3 --bind unix:Flask_app.sock -m 007 wsgi (code=exited, status=3/NOTIMPLEMENTED)```
+
+doing it right now :D
 If failed with code :
 ```any new error code```
 - check if gunicorn is in env_folder: 
