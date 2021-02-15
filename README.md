@@ -160,12 +160,11 @@ web browser : check your IP address, should shows a default nginx page
 
 # STEP 5 (app setup)
 ### create folder for application
-
-```mkdir ~/Flask_app```
-
-```cd ~/Flask_app```
-
-```chmod 770 ~/Flask_user``` # do not touch, good like this ! # add all permit to owner and group (nginx will be in the group see line 300(iss))
+```mkdir ~/Flask_app;```
+```cd /;```
+```chmod 770 Flask_user/;```
+```cd /home/Flask_user/Flask_app;```
+######### you must be in /home/Flask_user/Flask_app;
 
 
 ### virtualenv
