@@ -1,3 +1,9 @@
+# resources :
+##### setup txt file :
+[a link](https://github.com/sirfrank/Tutorial_Flask_app_setup_bash_script/blob/main/setup.txt)
+
+##### more debugging:
+[a link](https://github.com/sirfrank/Flask_app)
 # Guide to run your app on localhost
 
 ``` cd <your_app_directory>```
